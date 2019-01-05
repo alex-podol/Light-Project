@@ -11,11 +11,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var isLightOn = true
+    var isLightOn = false
     
     @IBAction func buttonPressed(_ sender: UIButton) {
         isLightOn = !isLightOn
-        
         updateUI()
     }
     
@@ -34,7 +33,6 @@ class ViewController: UIViewController {
         } else {
             view.backgroundColor = isLightOn ? .white : .black
         }
-        
     }
     
     override func viewDidLoad() {
